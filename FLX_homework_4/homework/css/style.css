@@ -329,73 +329,73 @@ main {
   color: #000000;
 }
 
-.footer-top {
+.contacts {
   display: flex;
   justify-content: space-between;
   margin-top: 5%;
   padding: 0% 2.6%;
 }
 
-.footer-top .col {
+.contacts .col {
   width: 25%;
   padding: 10px;
 }
 
-.footer-top .col h3 {
+.contacts .col h3 {
   font-size: 18px;
 }
 
-.footer-top .col p {
+.contacts .col p {
   color: #9E9E9E;
   font-size: 15px;
   margin: 6px 0px;
 }
 
-.footer-top .col p #time {
+.contacts .col p #time {
   display: block;
   margin-top: 10px;
   color: #E8E8E8;
 }
 
-.footer-top .info {
+.contacts .info {
   margin-left: 2.2%;
 }
 
-.footer-top .info .subscribe {
+.contacts .info .subscribe {
   display: flex;
 }
 
-.footer-bottom {
+.footer-content {
   margin-top: 5.2%;
   padding: 0% 2.6%;
 }
 
-.footer-bottom .row {
+.footer-content .row {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid #F0F0F0;
+  border-top: 2px solid #F0F0F0;
 }
 
-.footer-bottom .row span {
+.footer-content .row span {
   font-size: 14px;
   color: #9E9E9E;
 }
 
-.footer-bottom .row li {
+.footer-content .row li {
   display: inline-block;
   margin-left: 18px;
 }
 
-.footer-bottom .row li a {
+.footer-content .row li a {
   font-size: 15px;
   color: #000000;
   padding: 6px 0px;
   text-decoration: none;
 }
 
-.footer-bottom .row li a:hover {
+.footer-content .row li a:hover {
   border-bottom: 1px solid #515050;
   color: #6d6d6d;
 }
