@@ -1,0 +1,100 @@
+.navbar {
+	padding: 0;
+	font-size:0;	
+	.navbar-brand .logo {
+		width: 23px;
+		height: 38px;
+		background-image: url('../img/logo.png');
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.navbar-nav .nav-item .nav-link {
+		padding:0 12px;
+		line-height:48px;
+	}
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-nav .nav-item .nav-link:hover {
+	background-color: @blue;
+	color: @white;
+}
+
+.yoga-title,
+.classes-title {
+	border-bottom: 1px solid @blue;
+}
+
+.yoga {
+	margin-top: 26px;
+	h1 {
+		font-size: 2.4rem;
+		margin-bottom: 6px;
+	}
+	.yoga-image {
+		height: 400px;
+		background-image: url("../img/yoga.jpg");
+		background-size:100% 100%;
+	}
+	.yoga-description {
+		padding-top: 20px;
+		.yoga-description__title {
+			color: @blue;
+			font-weight: bold;
+		}
+		.yoga-description__text {
+			margin-bottom: 10px;
+			line-height: 1.45;
+			font-size: 14px;
+		}
+		.yoga-description-advantages {
+			font-size: 14px;
+		}
+	}
+}
+
+.classes {
+	margin-top: 40px;
+	.classes-title {
+		font-size:1.6rem;
+	}
+	.sport {
+		margin-top:20px;
+		.sport-type {
+			margin-bottom:40px;
+			.sport-type-kickbox {
+				background-color:@red;
+			}
+			.sport-type-xpress {
+				background-color:@blue;
+			}
+			.sport-type-zumba {
+				background-color:@orange;
+			}
+			.sport-type-bootcamp {
+				background-color:@green;
+			}
+		}
+		.sport-body {
+			padding:10px 0px;
+			.sport-body__title {
+				text-align:center;
+				font-weight:bold;
+				margin:0px;
+			}
+		}
+	}
+}
+
+.footer-content {
+	background-color:@grey;
+	padding:10px 20px;
+	.footer-content_text {
+		font-weight:bold;
+		font-size:15px;
+		margin:0;
+	}
+}
