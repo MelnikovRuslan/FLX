@@ -73,7 +73,7 @@ Bot.prototype.move = function(direction) {
 };
 
 Bot.prototype.showPosition = function() {
-	console.log(`I am Bot ${this.name}. I am located at ${this.x}:${this.y}.`);
+	console.log(`I am ${this.constructor.name} ${this.name}. I am located at ${this.x}:${this.y}.`);
 };
 
 let Racebot = function(bot) {
@@ -116,11 +116,6 @@ Racebot.prototype.ispeedInc = function(direction) {
 	}
 };
 
-Racebot.prototype.showPosition = function() {
-	console.log(`I am Racebot ${this.name}. I am located at ${this.x}:${this.y}.`);
-};
-
-
 let Speedbot = function(bot) {
 	Bot.call(this, bot);
 };
@@ -159,10 +154,6 @@ Speedbot.prototype.checkIncrease = function(){
 	if(this.getSpeed() > this.defaultSpeed()){
 		this.setSpeed(this.getSpeed() - 1);
 	}
-};
-
-Speedbot.prototype.showPosition = function() {
-	console.log(`I am Speedbot ${this.name}. I am located at ${this.x}:${this.y}.`);
 };
 
 let Botty = new Bot({name:'Betty', speed:2, x:0, y:1});
