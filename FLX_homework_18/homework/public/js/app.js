@@ -26,10 +26,6 @@ window.onclick = function(event) {
 		body.style.overflow = 'auto'
 		body.style.paddingRight = '0px'
 	}
-	if('editBtn showPosts'.includes(event.target.className)){
-		body.style.overflow = 'hidden'
-		body.style.paddingRight = '16px'
-	}
 }
 
 function getUsers(url, callBack) {
