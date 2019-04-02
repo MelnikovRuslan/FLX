@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework_18</title>
+	<link rel="stylesheet" href="public/style/style.css">
+</head>
+<body>
+	<div id="container">
+		<div id="users"></div>
+	</div>
+	<div id="eclipse"></div>
+	<div id="loader"></div>
+	<div id="myModal" class="modal">
+	  	<div id="modalContent" class="modal-content">
+	    	<span class="close">&times;</span>
+	    	<form class="editForm">
+		    	<div><label for="city">Citys</label><input class='data' name='userCity' id="city" type="text" maxlength="30"></div>
+		    	<div><label for="street">Street</label><input class='data' name='userStreet' id="street" type="text" maxlength="30"></div>
+		    	<div><label for="suite">Suite</label><input class='data' name='userSuite' id="suite" type="text" maxlength="30"></div>
+		    	<div><label for="company">Company</label><input class='data' name='userCompany' id="company" type="text" maxlength="30"></div>
+		    	<div><label for="phrase">Phrase</label><input class='data' name='userPhrase' id="phrase" type="text" maxlength="40"></div>
+		    	<div><label for="email">Email</label><input class='data' name='userEmail' id="email" type="text" maxlength="30"></div>
+		    	<div><label for="name">Name</label><input class='data' name='userName' id="name" type="text" maxlength="30"></div>
+		    	<div><label for="phone">Phone</label><input class='data' name='userPhone' id="phone" type="text" maxlength="30"></div>
+		    </form>
+	    	<button id="saveBtn">Save</button>
+	    	<button id='clodeModal'>Cancle</button>
+	  	</div>
+	</div>
+	<div id="postsModal" class="modal">
+	  	<div id="postModalContent" class="modal-content">
+	    	<span id="close" class="close">&times;</span>
+	  	</div>
+	</div>
+
+	<script src='public/js/app.js'></script>
+</body>
+</html>
