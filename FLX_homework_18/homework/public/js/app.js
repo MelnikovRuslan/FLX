@@ -288,10 +288,7 @@ function callFun(e){
 		if (getPostsComplete && getCommentsComplete) {
 			clearInterval(checkPostAndComments)
 			hideSpinner();
-
 			showPosts(userPosts, userComments)
-			
-			
 			postsModal.style.display = "block";
 			postsModal.scrollTop = 0;
 		}
