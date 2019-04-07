@@ -1,0 +1,25 @@
+{
+  "name": "homework",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "serve": "gulp serve"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-less": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.1.0"
+  }
+}
