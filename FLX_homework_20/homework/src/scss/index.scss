@@ -1,0 +1,133 @@
+// Common
+@import 'material-icons'; // self hosted material icons
+
+*{
+  font-family: sans-serif;
+}
+
+.app {
+  display: flex;
+}
+
+.player{
+  width:350px;
+  height: 320px;
+  position: relative;
+  .song-info{
+    padding-top:20px;
+  }
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    border-radius: 14px;
+  }
+  p{
+    margin:10px 10px;
+    color:#fff;
+  }
+  .song-title{
+    font-weight:bold;
+  }
+  .controls{
+    position: absolute;
+    left:0;
+    right: 0;
+    bottom:20px;
+    padding: 0 10px;
+    .bar{
+      height: 3px;
+      margin-bottom:20px;
+      background-color:rgba(255, 255, 255, 0.5);
+      .progress{
+        height: 3px;
+        background: rgb(0, 97, 255);
+        width: 0;
+      }
+    }
+    .control-btns{
+      display:flex;
+      justify-content: space-around;
+      button{
+        border:none;
+        border-radius: 100%;
+        padding: 6px;
+        transition:0.4s linear;
+        background-color: rgba(255, 255, 255, 0.5);
+        &:hover{
+          cursor: pointer;
+          transform:scale(1.4);
+          background-color: rgba(255, 255, 255, 0.8);
+        }
+      }
+      .play-btn{
+        transform:scale(1.4);
+      }
+    }
+  }
+
+}
+
+.now-playing {
+  min-width: 300px;
+}
+
+.now-playing, .playlist {
+  margin: 5px;
+}
+
+.playlist {
+  flex-grow: 1;
+  margin-left: 10px;
+  .active-playlist-button{
+    font-weight: bold;
+    background-color:initial;
+    border:none;
+  }
+  button {
+    font-size: 18px;
+    background-color:initial;
+    border:none;
+  }
+  ul{
+    padding: 0;
+    .song{
+      display: flex;
+      padding: 3px 10px;
+      background-color: rgba(219, 219, 219, 0.692);
+      margin-bottom: 10px;
+      border-radius: 10px;
+      .start-btn, .song-favorite{
+        display: flex;
+        align-items: center;
+      }
+      .list-play{
+        border: none;
+        background-color: initial;
+      }
+      .author{
+        line-height: 28px;
+        margin-left: 14px;
+        .song-title{
+          font-weight: bold;
+        }
+      }
+      .song-favorite{
+        line-height: 28px;
+        margin-left: auto;
+      }
+      .active{
+        color:rgb(236, 42, 12);
+      }
+      .favorite{
+        border: none;
+        background-color: inherit;
+        i{
+          line-height: 28px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
