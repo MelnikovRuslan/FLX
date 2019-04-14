@@ -1,0 +1,41 @@
+.movies {
+    padding: 20px 80px;
+    flex-wrap: wrap;
+    &__overview {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 40%;
+      flex-shrink: 1;
+      flex-grow: 1;
+      margin-bottom: 40px;
+      margin-left: 40px;
+      padding: 20px;
+      transition:1s linear;
+      &:hover {
+        border-radius: 5px;
+        transform:scale(1.12);
+        background-color: rgba(0, 0, 0, 0.12);
+        cursor: pointer;
+      }
+
+      div {
+        display: flex;
+      }
+      img {
+        width: auto;
+        height: 150px;
+        margin: 0 10px;
+      }
+    }
+    .find-field {
+      width:20%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      h3{
+        text-align: center;
+      }
+      input{
+        width:100%;
+      }
+    }
+  }
