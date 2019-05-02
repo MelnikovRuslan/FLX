@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FLX Homework</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="logs">
+      <input class="operation-log">
+      <input class="result-log" disabled>
+    </div>
+    <div class="buttons">
+      <input class="calc-btn" type="button" data-role="operator" value="*">
+      <input class="calc-btn" type="button" data-role="operator" value="/">
+      <input class="calc-btn" type="button" data-role="operator" value="-">
+      <input class="calc-btn" type="button" data-role="operator" value="+">
+    </div>
+    <div class="buttons">
+      <input class="calc-btn" type="button" data-role="number" value="7">
+      <input class="calc-btn" type="button" data-role="number" value="8">
+      <input class="calc-btn" type="button" data-role="number" value="9">
+      <input class="memory-save-btn" type="button" value="M+">
+    </div>
+    <div class="buttons">
+      <input class="calc-btn" type="button" data-role="number" value="4">
+      <input class="calc-btn" type="button" data-role="number" value="5">
+      <input class="calc-btn" type="button" data-role="number" value="6">
+      <input class="memory-clean-btn" type="button" value="MC">
+    </div>
+    <div class="buttons">
+      <input class="calc-btn" type="button" data-role="number" value="1">
+      <input class="calc-btn" type="button" data-role="number" value="2">
+      <input class="calc-btn" type="button" data-role="number" value="3">
+      <input class="result-btn" type="button" value="=">
+    </div>
+    <div class="buttons">
+      <input class="calc-btn" type="button" data-role="operator" value=".">
+      <input class="calc-btn" type="button" data-role="number" value="0">
+      <input class="clear-btn" type="button" value="C">
+    </div>
+  </div>
+  <script src="js/jquery-3.4.0.min.js"></script>
+  <script src="js/calc.js"></script>
+</body>
+</html>
